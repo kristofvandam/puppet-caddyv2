@@ -4,5 +4,5 @@ class caddyv2 (
 ) {
   contain 'caddyv2::package'
 
-  Class['caddyv2::package'] -> Class['caddyv2::config'] ~> Class['caddyv2::service']
+  Class['caddyv2::package'] # -> Class['caddyv2::config'] ~> Class['caddyv2::service']
 }
